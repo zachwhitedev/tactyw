@@ -6,32 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>RPG 1</title>
+    <title>Toss A Coin to your Witcher</title>
 </head>
 <body>
-        <div id='bankroll'></div>
-        <div id='character'>
-                <div id='head'></div>
-                <div id='torso'>
-                    <p id='tshirt-logo'></p>  
-                </div>
-                <div id='hat'></div>
-                <div id='leg-right'></div>
-                <div id='leg-left'></div>
+    <p id='byme'>by <a href='https://www.zachwhite.dev' target="_blank">Zach White</a></p>
+    <div id='cointitle'>
+        <p>Toss A Coin To Your Witcher</p>
     </div>
-    <div id='store'>
-        <p>The Store</p>
-        <button id = 'supremey' onclick="makeSupreme()">Supreme tShirt! ($30)</button><br>
-        <p id='store-message'></p>
-
+    <div id='bankroll'></div>
+    <p id='donation-status'></p>
+    <img id='propic' src='./yennefer.png' />
+    
+    <img src='https://media.melty.fr/article-4035056-raw/henry-cavill-est-geralt-de-riv-dans-the-witcher.gif' id='geralt-gif'/>
+    <img src='./coinpurse.png' id='coinpurse'/>
+    <img id='roach' src='https://66.media.tumblr.com/efd886bae087b8781cc244b8e15d65ee/tumblr_omqfb5AXdz1v3myc1o2_250.gifv' />
+    
+    <div id="get-dollar">
+        <button id='get-dollar' onclick="getDollar()">Toss a Coin</button>
     </div>
-
-    <button onclick="openStore()">Store</button><br>
-    <button id='get-dollar' onclick="getDollar()">Click for $1</button>
-
-
-
-
+    
+    <div id='loyalty'>
+        <h2>Congratulations!</h2>
+        <h5>You have proven <b>supreme loyalty</b> to your Witcher.</h5>
+        <h3>Donation Status: Roach</h3>
+    </div>
+    
+    <div id='startoverbtndiv'>
+        <button id='startoverbtn' onclick="startover()">Start Over</button>
+    </div>
+    
+    
+    
+    <audio id="audio" src="./tossedcoin2.m4a" ></audio>
+    <audio id="hmm" src="./geralthmm.m4a" ></audio>
+    <audio id="song1" src="./song1.m4a" ></audio>
     <script src="main.js"></script>
 </body>
 </html>
